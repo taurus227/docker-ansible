@@ -11,8 +11,8 @@ Run `./setup.sh` to
 - https://hub.docker.com/r/williamyeh/ansible/
   - https://github.com/William-Yeh/docker-ansible/tree/master/master-ubuntu18.04
   - https://www.slideshare.net/williamyeh/ansible-docker-65362893
-- https://stackoverflow.com/a/27504514/2969332
-- https://stackoverflow.com/a/44734246/2969332
+- https://galaxy.ansible.com/darkwizard242/docker
+- https://galaxy.ansible.com/darkwizard242/dockercompose
 
 ## Run Ansible playbook
 - Test servers: `./run.sh`
