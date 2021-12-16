@@ -2,17 +2,10 @@
 
 **Copied from https://github.com/TitusTech/docker-ansible**
 
-## Setup
-Run `./setup.sh` and anwer all questions:
-1. enter `y`
-1. enter `yes`
-1. enter `vagrant` password
-
-This will:
-- Run a linux with ansible installed
-- Generate ssh keys
-- Copy the public key to managed host
-- ping the host
+## Setup docker container with Ansible
+Run `./setup.sh` to
+- run a container with linux and ansible installed
+- install Galaxy collections
 
 ### References:
 - https://hub.docker.com/r/williamyeh/ansible/
@@ -21,6 +14,7 @@ This will:
 - https://stackoverflow.com/a/27504514/2969332
 - https://stackoverflow.com/a/44734246/2969332
 
-## Run
-Run `./run.sh`
-- It will run the ansible playbook
+## Run Ansible playbook
+- Test servers: `./run.sh`
+- Prod servers: `./run.sh -e "variable_host=prod"`
+- Verbose: `./run.sh -vvv`, or even `./run.sh -vvvv` for very verbose
